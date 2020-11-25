@@ -1,0 +1,14 @@
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations:
+    - mybatis/mapper/**/*.xml
+  type-aliases-package: com.me.test.model
+#    - mybatis/mapper/vote/*.xml
+#    - mybatis/mapper/financeandbusiness/*.xml
+#    - mybatis/mapper/woschool/*.xml
+
+
+#mapper:
+#  safe-delete: true
+#  safe-update: true
+#  enum-as-simple-type: true

@@ -1,0 +1,8 @@
+logging:
+  level:
+    root: info
+    com.unicom.shenzhen: debug
+    org.apache.ibatis: debug
+    com.unicom.shenzhen.wechatwork.autoconfig.work.entrypoint: info
+  path: logs
+  file: ${spring.application.name:wechat-work-app}

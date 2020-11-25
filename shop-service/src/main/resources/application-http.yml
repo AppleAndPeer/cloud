@@ -1,0 +1,6 @@
+http:
+  proxy-enable: false
+  proxy-ip: 132.102.99.22
+  proxy-port: 8080
+  connection-timeout: 1000
+  read-timeout: 1000

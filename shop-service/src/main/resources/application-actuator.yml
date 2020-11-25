@@ -1,0 +1,13 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude:
+          - env
+  endpoint:
+    health:
+      # 配置此参数使 health 在所有情况下显示详情
+      show-details: ALWAYS
+    logfile:
+      external-file: ${logging.path}/debug/${logging.file}.log

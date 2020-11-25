@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<springProfile name="default | development">
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</springProfile>

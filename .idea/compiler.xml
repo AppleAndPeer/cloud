@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="shop-work-goods" />
+        <module name="shop-work-pay" />
+        <module name="shop-service" />
+        <module name="shop-work-customer" />
+        <module name="shop-work-gateway" />
+        <module name="shop-work-order" />
+        <module name="shop-model" />
+        <module name="shop-work-account" />
+        <module name="shop-job" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="shop-model" options="-parameters" />
+      <module name="shop-parent" options="-parameters" />
+      <module name="shop-service" options="-parameters" />
+      <module name="shop-work-goods" options="-parameters" />
+    </option>
+  </component>
+</project>

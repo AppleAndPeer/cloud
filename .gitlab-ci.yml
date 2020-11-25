@@ -1,0 +1,23 @@
+include:
+  - project: department-of-informatization/public/gitlab-ci-templates
+    ref: master
+    file: /template.yml
+
+#普通的的打包任务
+.docker:common-release:
+  extends: .docker:build-deploy
+  stage: release
+  only:
+    - /^(hotfix|feature)/carambole-job/.*$/
+    - master
+
+docker:shop-goods-deploy:
+  extends: .docker:build-push
+  stage: release
+  only:
+    - feature-shop-goods
+  variables:
+    DOCKER_DOCKERFILE: shop-goods/Dockerfile
+    DOCKER_IMAGE: shop/goods
+    DOCKER_TAG_VERSION: 1.0.0-snapshots
+

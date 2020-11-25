@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    include:
+      - db
+      - http
+      - log
+      - mybatis
+      - actuator
+    active: development
+#    active: production

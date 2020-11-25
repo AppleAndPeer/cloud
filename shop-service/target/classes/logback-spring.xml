@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <property name="LOG_PATH" value="${LOG_PATH:-${LOG_TEMP:-${java.io.tmpdir:-/tmp}}}"/>
+    <property name="LOG_FILE" value="${LOG_FILE:-${spring.application.name:-lychee}}"/>
+
+    <include resource="logback-spring-development.xml"/>
+    <include resource="logback-spring-production.xml"/>
+    <include resource="logback-spring-kubernetes.xml"/>
+</configuration>
